@@ -1,0 +1,109 @@
+body > header {
+  width: 100vw;
+  height: 10vh;
+  position: absolute;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-around;
+}
+body > header ul.flex {
+  justify-content: space-between;
+  list-style: none;
+  color: var(--primary-color);
+  width: 30vw;
+  display: none;
+}
+body > header li {
+  color: var(--primary-color);
+}
+body > header > div:not(#logo) {
+  display: none;
+}
+@media (min-width: 375px) {
+  body > header ul.flex {
+    display: flex;
+  }
+  body > header > div:not(#logo) {
+    display: initial;
+  }
+}
+
+section#landing {
+  width: 100vw;
+  background-color: var(--primary-bgcolor);
+  height: 130vh;
+  background-image: url('../images/bg-tablet-pattern.svg');
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
+  align-items: flex-end;
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-origin: border-box;
+}
+section#landing > article {
+  height: 50%;
+  width: 100%;
+  /* border: 2px solid red; */
+  padding: 20px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-around;
+}
+#landing > article:nth-child(1) {
+  height: 40%;
+  background-image: url('../images/illustration-intro.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+section#landing > article > div {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+section#landing header h1 {
+  font-size: 2.7em;
+  text-align: center;
+  font-weight: 700;
+  margin: 0;
+}
+@media (min-width: 375px) {
+  #nav_btn {
+    display: none;
+  }
+  section#landing {
+    height: 100vh;
+    flex-flow: row-reverse nowrap;
+  }
+
+  #landing > article:nth-child(1) {
+    height: 80%;
+  }
+
+  section#landing > article {
+    height: 80%;
+    width: 80%;
+  }
+  #landing > article:nth-child(1) {
+    height: 80%;
+  }
+
+  section#landing > article > div {
+    width: 65%;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+  section#landing header h1 {
+    text-align: start;
+    font-size: 3.5em;
+  }
+  section#landing p {
+    width: 70%;
+    word-break: break-all;
+    line-height: 1.6;
+  }
+}

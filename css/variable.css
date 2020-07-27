@@ -1,0 +1,11 @@
+:root {
+  --primary-font: 'Be Vietnam', sans-serif;
+  --primary-bgcolor: hsl(0, 0%, 98%);
+  --primary-color: #262e53;
+  --secondary-color: #c2c3c7;
+  --btn-color: #f3613c;
+  --grayisblue: hsl(227, 12%, 61%);
+  --darkblue: hsl(233, 12%, 13%);
+  --pale-red: hsl(13, 100%, 96%);
+  --lightgray: hsl(0, 0%, 98%);
+}

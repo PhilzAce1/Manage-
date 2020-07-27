@@ -1,0 +1,24 @@
+.flex {
+  display: flex;
+}
+.f_col {
+  flex-flow: column nowrap;
+}
+.f_row {
+  flex-flow: row nowrap;
+}
+.f_al_center {
+  align-items: center;
+}
+.f_jc_center {
+  justify-content: center;
+}
+.btn {
+  padding: 15px 30px;
+}
+.btn_primary {
+  background-color: var(--btn-color);
+  border: 0;
+  outline: none;
+  border-radius: 30px;
+}
