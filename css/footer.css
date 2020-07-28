@@ -84,15 +84,18 @@ footer .second .socials {
   flex-flow: column nowrap;
   align-items: center;
   justify-content: space-around;
+  padding: 0 40px;
 }
 footer .second .socials ul {
   width: 100%;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
+  align-items: center;
 }
 footer .second .socials li {
   list-style: none;
+  font-size: 1.3em;
 }
 .nav_pane {
   position: absolute;
@@ -104,6 +107,7 @@ footer .second .socials li {
   left: 50%;
   transform: translateX(-50%);
   transition: all 2s;
+  display: none;
 }
 .nav_pane ul {
   height: 80%;

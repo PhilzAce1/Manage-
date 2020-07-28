@@ -8,4 +8,11 @@
 html {
   width: 100%;
   overflow-x: none;
+  /* background-color: red; */
+}
+body {
+  overflow-x: none;
+
+  width: 100vw;
+  /* background: yellow; */
 }
